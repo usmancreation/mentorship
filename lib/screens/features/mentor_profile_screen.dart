@@ -41,7 +41,7 @@ class _MentorProfileScreenState extends State<MentorProfileScreen> {
 
     try {
       var response = await http.post(
-        Uri.parse('https://techrisepk.com/mentor/mentorauth/get_mentor_skills.php'),
+        Uri.parse('https:/mentorauth/get_mentor_skills.php'),
         body: {'mentor_id': mId}
       );
 
@@ -74,8 +74,7 @@ class _MentorProfileScreenState extends State<MentorProfileScreen> {
     String finalSkillsString = _selectedSkills.join(", ");
 
     try {
-      var response = await http.post(
-        Uri.parse('https://techrisepk.com/mentor/mentorauth/update_skills.php'),
+      var response = await /mentor/mentorauth/update_skills.php'),
         body: {
           'mentor_id': mId,
           'skills': finalSkillsString,
