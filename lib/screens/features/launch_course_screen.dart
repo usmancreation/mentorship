@@ -38,7 +38,7 @@ class _LaunchCourseScreenState extends State<LaunchCourseScreen> {
     String mName = prefs.getString('mentorName') ?? ""; 
 
     try {
-      var response = await http.get(Uri.parse('https://techrisepk.com/mentor/courses/get_courses.php'));
+      var response = await http.get(Uri.parse('https:yourdomain/mentor/courses/get_courses.php'));
       
       if (response.statusCode == 200) {
         var jsonResponse = jsonDecode(response.body);
@@ -96,7 +96,7 @@ class _LaunchCourseScreenState extends State<LaunchCourseScreen> {
     // API Call to delete (Backend file required: delete_course.php)
     try {
       var response = await http.post(
-        Uri.parse('https://techrisepk.com/mentor/courses/delete_course.php'),
+        Uri.parse('https:yourdoamin/mentor/courses/delete_course.php'),
         body: {'id': courseId}
       );
 
@@ -146,7 +146,7 @@ class _LaunchCourseScreenState extends State<LaunchCourseScreen> {
 
     try {
       var response = await http.post(
-        Uri.parse('https://techrisepk.com/mentor/courses/add_course.php'),
+        Uri.parse('https:yourdomain/mentor/courses/add_course.php'),
         body: {
           'mentor_id': mId,
           'mentor_name': mName,
