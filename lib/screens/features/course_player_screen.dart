@@ -105,7 +105,7 @@ class _CoursePlayerScreenState extends State<CoursePlayerScreen> {
       // --- 4. UPDATE SERVER ---
       try {
         await http.post(
-          Uri.parse('https://techrisepk.com/mentor/courses/update_progress.php'),
+          Uri.parse('yourdomain/mentor/courses/update_progress.php'),
           body: {
             'student_id': uId,
             'course_id': widget.courseId,
