@@ -7,7 +7,6 @@ import '../../services/notification_service.dart';
 class CreateQuizScreen extends StatefulWidget {
   final String mentorName;
   const CreateQuizScreen({super.key, required this.mentorName});
-
   @override
   State<CreateQuizScreen> createState() => _CreateQuizScreenState();
 }

@@ -10,7 +10,6 @@ class MentorProfileScreen extends StatefulWidget {
   @override
   State<MentorProfileScreen> createState() => _MentorProfileScreenState();
 }
-
 class _MentorProfileScreenState extends State<MentorProfileScreen> {
   // --- STATE VARIABLES ---
   List<String> _selectedSkills = []; // Jo user ne select ki hain (Source of Truth)
@@ -29,7 +28,6 @@ class _MentorProfileScreenState extends State<MentorProfileScreen> {
     "SEO Expert",
     "Python",
   ];
-
   @override
   void initState() {
     super.initState();

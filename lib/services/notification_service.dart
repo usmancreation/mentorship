@@ -57,7 +57,6 @@ class NotificationService {
       } catch (dbError) {
         print("Database Save Error: $dbError");
       }
-
     } catch (e) {
       print("Notification Exception: $e");
     }
